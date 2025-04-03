@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KPI Dashboard (لوحة التحكم بـ KPI)</h1>
+
+    <!-- فلتر الـ KPIs حسب التكرار -->
+    <div class="filter-container">
+        <h2>Filter KPIs by Frequency (فلتر KPIs حسب التكرار)</h2>
+        <button onclick="filterKPIs('Monthly')">Monthly (شهري)</button>
+        <button onclick="filterKPIs('Quarterly')">Quarterly (ربع سنوي)</button>
+        <button onclick="filterKPIs('Semi-Annual')">Semi-Annual (نصف سنوي)</button>
+        <button onclick="filterKPIs('Annually')">Annually (سنوي)</button>
+    </div>
+
+    <!-- جدول عرض الـ KPIs -->
+    <div class="dashboard">
+        <h2>Dashboard (لوحة القيادة)</h2>
+        <table id="kpi-table">
+            <thead>
+                <tr>
+                    <th>Objective Name (اسم الهدف)</th>
+                    <th>KPI (الـ KPI)</th>
+                    <th>KPI ID (معرف الـ KPI)</th>
+                    <th>Description (الوصف)</th>
+                    <th>Frequency (التكرار)</th>
+                    <th>Value (القيمة)</th>
+                    <th>Threshold (الحد المسموح)</th>
+                    <th>Date (التاريخ)</th>
+                    <th>Status (الحالة)</th>
+                    <th>Delete (حذف)</th>
+                </tr>
+            </thead>
+            <tbody id="kpi-container">
+                <!-- سيتم إضافة الـ KPIs هنا باستخدام JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<table id="kpi-table">
+    <thead>
+        <tr>
+            <th>Objective Name (اسم الهدف)</th>
+            <th>KPI (الـ KPI)</th>
+            <th>KPI ID (معرف الـ KPI)</th>
+            <th>Description (الوصف)</th>
+            <th>Frequency (التكرار)</th>
+            <th>Value (القيمة)</th>
+            <th>Threshold (الحد المسموح)</th>
+            <th>Date (التاريخ)</th>
+            <th>Status (الحالة)</th>
+            <th>Delete (حذف)</th>
+        </tr>
+    </thead>
+    <tbody id="kpi-container">
+        <!-- سيتم إضافة الـ KPIs هنا باستخدام JavaScript -->
+    </tbody>
+</table>
